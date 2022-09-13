@@ -1,0 +1,424 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.containerIndex{
+    margin: auto;
+    display: grid;
+    grid-template-rows: auto 10fr auto;
+}
+.containerMainIndex{
+    width: 90%;
+    margin: auto;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 4rem;
+}
+.containerMainSobreMi{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 4rem;
+}
+.containerMainServicios{
+    margin: auto;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 5rem;
+}
+.containerMainExito{
+    width: 90%;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 5rem;
+}
+.containerMainContacto{
+    width: 90%;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 5rem;
+}
+header{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+
+/* Nav Bar  */
+
+.navBar{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.navBarItem{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 0.4rem;
+    font-size: small;
+}
+.logo{
+    width: 2.3rem;
+}
+
+/* Footer  */
+
+.footer1{
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 0.5rem ;
+}
+.footer2{
+    background-color: rgb(49, 48, 48);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-size: 0.6rem;
+    padding: 0.3rem;
+}
+.footerImg{
+    width: 1.2rem;
+    margin-top: 0.5rem;
+}
+.footerImagenesDiv{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* Home  */
+
+.home1{
+    margin-left: 60px;
+}
+.pHome{
+    margin-top: 80px;
+}
+.homeDiv{
+    width: 150px;
+    height: 150px;
+    background-color: #C60E32;
+    border-radius: 50%;
+    position: absolute;
+    left: -100px;
+    top: 180px;
+}
+.home2{
+    margin: 20px 0;
+    height: 50vh;
+    display: grid;
+    grid-template-areas: 
+    "servicioP servicio1"
+    "servicioP servicio2";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+.servicioHome1{
+    border: 1px solid black;
+    grid-area: servicioP;
+}
+.servicioHome2{
+    border: 1px solid black;
+    grid-area: servicio1;
+}
+.servicioHome3{
+
+    border: 1px solid black;
+    grid-area: servicio2;
+}
+.proyectosSection h6{
+    margin-bottom: 4rem;
+}
+.contenedorRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1rem;
+    align-items: center;
+}
+.contenedorRowRev{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    gap: 1rem;
+    align-items: center;
+}
+.homeProyectosDiv{
+    width: 220px;
+    height: 220px;
+    background-color: #000
+}
+.contenedorRow p{
+    width: 65%;
+}
+.contenedorRowRev p{
+    width: 65%;
+}
+.home4{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.home4 h3{
+    width: 40%;
+}
+.home4 form{
+    width: 50%;
+}
+.formDiv{
+    margin-top: 1rem;
+}
+.formLabel{
+    display: block;
+}
+input{
+    width: 100%;
+    height: 2rem;
+    margin-top: 1.3rem;
+}
+textarea{
+    width: 100%;
+    margin-top: 1.3rem;
+}
+
+/* Sobre Mi  */
+
+.sobreMi{
+    background-color: #C60E32;
+    padding: 20px;
+    color: rgb(247, 193, 193);
+    display: flex;
+    justify-content: space-around;
+}
+.perfilPicture{
+    width: 150px;
+}
+.contenedorSobreMi{
+    background-color: #C60E32;
+    padding: 20px;
+    color: rgb(247, 193, 193);
+}
+.contenedorCentral{
+    width: 90%;
+    margin: 50px auto 0;
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    gap: 50px;
+}
+.contenedorCentral2{
+    width: 90%;
+    margin: auto auto;
+
+}
+
+/* Servicios  */
+
+.sobreMi h1{
+    text-align: center;
+}
+.contenedorServicios{
+    width: 90%;
+    background-color: #C60E32;
+    color: rgb(247, 193, 193);
+    padding: 50px;
+    margin: auto;
+}
+.gridServicios{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    margin-top: 50px;
+    grid-template-areas: 
+    "descripcion imagen"
+    "precio imagen";
+    gap: 30px;
+}
+.gridServicios p{
+    grid-area: descripcion;
+}
+.gridServicios h4{
+    grid-area: precio;
+    justify-self: center;
+}
+.gridServicios div{
+    grid-area: imagen;
+}
+
+
+/* Casos de Exito  */
+
+#casosDeExito{
+    padding: 20px;
+}
+
+
+/* Contacto */
+
+.contenedorContacto h1{
+    margin-bottom: 40px;
+}
+.contacto input{
+    width: 50%;
+    height: 35px;
+    margin: 10px 0;
+}
+.contacto textarea{
+    width: 50%;
+    margin: 20px 0 20px;
+}
+
+
+/* Media Queries */
+
+
+@media screen and (max-width: 600px){
+    .home2{
+        margin: 40px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .servicioHome1{
+        border: 1px solid black;
+        width: 50%;
+        height: 100rem;
+    }
+    .servicioHome2{
+        border: 1px solid black;
+        width: 50%;
+        height: 90rem;
+    }
+    .servicioHome3{
+    
+        border: 1px solid black;
+        width: 50%;
+        height: 90rem;
+    }
+    .contenedorRow{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        align-items: center;
+        margin-top: 3rem;
+    }
+    .contenedorRowRev{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+        align-items: center;
+        margin-top: 4rem;
+    }
+    .home4{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .home4 h3{
+        width: 80%;
+        margin: 1.5rem 0;
+    }
+    .home4 form{
+        width: 80%;
+    }
+    .formDiv{
+        margin-top: 0.4rem;
+    }
+    .formLabel{
+        display: block;
+    }
+    input{
+        width: 100%;
+        height: 1.4rem;
+        margin-top: 0.5rem;
+    }
+    textarea{
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+    .containerMainSobreMi{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        gap: 4rem;
+    }
+    .sobreMi{
+        background-color: #C60E32;
+        padding: 20px;
+        color: rgb(247, 193, 193);
+        display: flex;
+        justify-content: space-around;
+        margin-top: 0;
+        }
+    .contenedorCentral{
+        padding: 0 1.2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin: auto;
+    }
+    .gridServicios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gridServicios h4{
+        order: 2
+    }
+    .containerMainExito{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+    }
+    .containerMainContacto{
+        width: 90%;
+        margin: 3rem auto;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        gap: 5rem;
+    }
+    .contacto input{
+        width: 100%;
+        height: 35px;
+        margin: 10px 0;
+    }
+    .contacto textarea{
+        width: 100%;
+        margin: 20px 0 20px;
+    }
+}
