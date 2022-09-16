@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./imagenes/favicon.ico" />
     <title>Sobre Mi</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -44,7 +45,7 @@
             hic rerum nihil ipsum?
           </p>
         </section>
-        <section class="contenedorCentral2">
+        <section data-aos="fade-right" class="contenedorCentral2">
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Consectetur dolor cumque quisquam enim hic sunt numquam distinctio
@@ -52,7 +53,7 @@
             corrupti accusantium laborum eveniet ex.
           </p>
         </section>
-        <section class="contenedorRow contenedorSobreMi">
+        <section data-aos="zoom-out" class="contenedorRow contenedorSobreMi">
           <div class="homeProyectosDiv"></div>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -61,7 +62,7 @@
             corrupti accusantium laborum eveniet ex.
           </p>
         </section>
-        <section class="contenedorCentral">
+        <section data-aos="zoom-out" class="contenedorCentral">
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Consectetur dolor cumque quisquam enim hic sunt numquam distinctio
@@ -70,7 +71,7 @@
           </p>
           <div class="homeProyectosDiv"></div>
         </section>
-        <section class="contenedorRowRev contenedorSobreMi">
+        <section data-aos="zoom-out" class="contenedorRowRev contenedorSobreMi">
           <div class="homeProyectosDiv"></div>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -117,5 +118,9 @@
         </div>
       </footer>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({easing: 'ease-out-back',duration: 2000});
+    </script>
   </body>
 </html>

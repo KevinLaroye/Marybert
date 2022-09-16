@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./imagenes/favicon.ico" />
     <title>MaryBert - Portafolio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
   </head>
 
@@ -48,14 +49,14 @@
         <section>
           <h6>Frase que te hace llegar a los servicios</h6>
           <div class="home2">
-            <div class="servicioHome1">NOMBRE SERVICIO PRINCIPAL</div>
-            <div class="servicioHome2">NOMBRE SERVICIO</div>
-            <div class="servicioHome3">NOMBRE SERVICIO</div>
+            <div class="servicioHome1"></div>
+            <div class="servicioHome2"></div>
+            <div class="servicioHome3"></div>
           </div>
         </section>
         <section class="proyectosSection">
           <h6>Frase que muestre los proyectos</h6>
-          <div class="contenedorRow">
+          <div data-aos="flip-up" class="contenedorRow">
             <div class="homeProyectosDiv"></div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
@@ -66,7 +67,7 @@
               assumenda odio quo aliquid. Iure, ad nesciunt!
             </p>
           </div>
-          <div class="contenedorRowRev">
+          <div data-aos="flip-up" class="contenedorRowRev">
             <div class="homeProyectosDiv"></div>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
@@ -148,5 +149,9 @@
         </div>
       </footer>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({easing: 'ease-out-back',duration: 2000});
+  </script>
   </body>
 </html>

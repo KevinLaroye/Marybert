@@ -128,27 +128,44 @@ header{
 }
 .home2{
     margin: 20px 0;
-    height: 50vh;
+    height: 60vh;
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "servicioP servicio1"
     "servicioP servicio2";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     gap: 20px;
 }
 .servicioHome1{
-    border: 1px solid black;
+    background-color: #000;
     grid-area: servicioP;
+    opacity: 0.7;
+    transition: all 2s;
+}
+.servicioHome1:hover{
+    transform: scale(1.08);
+    opacity: 1;
 }
 .servicioHome2{
-    border: 1px solid black;
+    background-color: #000;
     grid-area: servicio1;
+    opacity: 0.7;
+    transition: all 2s;
+}
+.servicioHome2:hover{
+    transform: scale(1.08);
+    opacity: 1;
 }
 .servicioHome3{
-
-    border: 1px solid black;
+    background-color: #000;
     grid-area: servicio2;
+    opacity: 0.7;
+    transition: all 2s;
+}
+.servicioHome3:hover{
+    transform: scale(1.08);
+    opacity: 1;
 }
 .proyectosSection h6{
     margin-bottom: 4rem;
@@ -218,6 +235,10 @@ textarea{
 }
 .perfilPicture{
     width: 150px;
+    transition: 2s;
+}
+.perfilPicture:hover{
+    transform: scale(1.08);
 }
 .contenedorSobreMi{
     background-color: #C60E32;
