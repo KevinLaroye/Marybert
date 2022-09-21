@@ -51,61 +51,12 @@ body{
     align-content: space-between;
     gap: 5rem;
 }
-header{
-    background-color: #000;
-    color: #fff;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-}
 
-
-/* Nav Bar  */
-
-.navBar{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-.navBarItem{
-    color: #fff;
-    text-decoration: none;
-    margin-right: 0.4rem;
-    font-size: small;
-}
-.logo{
-    width: 2.3rem;
-}
 
 /* Footer  */
 
-.footer1{
-    background-color: #000;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-    padding: 0.5rem ;
-}
-.footer2{
-    background-color: rgb(49, 48, 48);
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    font-size: 0.6rem;
-    padding: 0.3rem;
-}
 .footerImg{
     width: 1.2rem;
-    margin-top: 0.5rem;
-}
-.footerImagenesDiv{
-    display: flex;
-    justify-content: space-evenly;
 }
 
 
@@ -140,7 +91,7 @@ header{
 .servicioHome1{
     background-color: #000;
     grid-area: servicioP;
-    opacity: 0.7;
+    opacity: 0.8;
     transition: all 2s;
 }
 .servicioHome1:hover{
@@ -150,7 +101,7 @@ header{
 .servicioHome2{
     background-color: #000;
     grid-area: servicio1;
-    opacity: 0.7;
+    opacity: 0.8;
     transition: all 2s;
 }
 .servicioHome2:hover{
@@ -160,7 +111,7 @@ header{
 .servicioHome3{
     background-color: #000;
     grid-area: servicio2;
-    opacity: 0.7;
+    opacity: 0.8;
     transition: all 2s;
 }
 .servicioHome3:hover{
