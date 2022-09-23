@@ -270,7 +270,7 @@ textarea{
 /* Media Queries */
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 480px){
     .home2{
         margin: 40px 0;
         display: flex;
@@ -375,6 +375,34 @@ textarea{
         display: flex;
         flex-direction: column;
         align-content: space-around;
+    }
+    .containerMainContacto{
+        width: 90%;
+        margin: 3rem auto;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        gap: 5rem;
+    }
+    .contacto input{
+        width: 100%;
+        height: 35px;
+        margin: 10px 0;
+    }
+    .contacto textarea{
+        width: 100%;
+        margin: 20px 0 20px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .gridServicios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gridServicios h4{
+        order: 2
     }
     .containerMainContacto{
         width: 90%;
