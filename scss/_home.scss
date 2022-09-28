@@ -1,0 +1,133 @@
+/* Home  */
+.containerIndex{
+    margin: auto;
+    display: grid;
+    grid-template-rows: auto 10fr auto;
+}
+.containerMainIndex{
+    width: 90%;
+    margin: auto;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 4rem;
+}
+.home1{
+    margin-left: 60px;
+}
+.pHome{
+    margin-top: 80px;
+}
+.homeDiv{
+    width: 150px;
+    height: 150px;
+    background-color: $colorRed;
+    border-radius: 50%;
+    position: absolute;
+    left: -100px;
+    top: 180px;
+}
+.home2{
+    margin: 20px 0;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "servicioP servicio1"
+    "servicioP servicio2";
+    gap: 20px;
+}
+.servicioHome1{
+    background-color: #000;
+    grid-area: servicioP;
+    opacity: 0.8;
+    transition: all 2s;
+
+    &:hover{
+        transform: scale(1.08);
+        opacity: 1;
+    }
+}    
+.servicioHome2{
+    background-color: #000;
+    grid-area: servicio1;
+    opacity: 0.8;
+    transition: all 2s;
+
+    &:hover{
+        transform: scale(1.08);
+        opacity: 1;
+    }
+}
+.servicioHome3{
+    background-color: #000;
+    grid-area: servicio2;
+    opacity: 0.8;
+    transition: all 2s;
+
+    &:hover{
+        transform: scale(1.08);
+        opacity: 1;
+    }
+}
+.proyectosSection h6{
+    margin-bottom: 4rem;
+}
+.contenedorRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1rem;
+    align-items: center;
+
+    p{
+        width: 65%;
+    }
+}
+.contenedorRowRev{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    gap: 1rem;
+    align-items: center;
+
+    p{
+        width: 65%;
+    }
+}
+.homeProyectosDiv{
+    width: 220px;
+    height: 220px;
+    background-color: #000
+}
+.home4{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    h3{
+        width: 40%;
+    }
+    form{
+        width: 50%;
+    }
+}
+.formDiv{
+    margin-top: 1rem;
+}
+.formLabel{
+    display: block;
+}
+input{
+    width: 100%;
+    height: 2rem;
+    margin-top: 1.3rem;
+}
+textarea{
+    width: 100%;
+    margin-top: 1.3rem;
+}
