@@ -1,12 +1,10 @@
 /* Casos de Exito  */
 
 .containerMainExito{
+    @extend .containerEjemplo;
     width: 90%;
-    margin: 3rem auto;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    gap: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 #casosDeExito{
     padding: 20px;

@@ -1,23 +1,5 @@
-$colorRed: #C60E32; 
-$fontFamily: Verdana, Geneva, Tahoma, sans-serif;
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    font-family: $fontFamily;
-}
-
-
-/* Footer  */
-
-.footerImg{
-    width: 1.2rem;
-}
-
-
+@import "variables";
+@import "reset";
 @import "home";
 @import "sobreMi";
 @import "servicios";

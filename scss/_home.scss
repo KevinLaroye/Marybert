@@ -1,3 +1,26 @@
+body{
+    font-family: $fontFamily;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Covered By Your Grace', cursive;
+}
+
+/* Header  */
+
+.headerImg{
+    @include sizes(35px, 24p);
+}
+.navbar-nav{
+    align-items: flex-end;
+}
+
+/* Footer  */
+
+.footerImg{
+    width: 1.2rem;
+}
+
 /* Home  */
 .containerIndex{
     margin: auto;
@@ -5,13 +28,9 @@
     grid-template-rows: auto 10fr auto;
 }
 .containerMainIndex{
+    @extend .containerEjemplo;
     width: 90%;
-    margin: auto;
     padding: 2rem 0;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    gap: 4rem;
 }
 .home1{
     margin-left: 60px;
@@ -20,27 +39,31 @@
     margin-top: 80px;
 }
 .homeDiv{
-    width: 150px;
-    height: 150px;
+    @include sizes(150px, 150px);
     background-color: $colorRed;
     border-radius: 50%;
     position: absolute;
     left: -100px;
     top: 180px;
 }
+.serviciosHome{
+    height: auto;
+}
 .home2{
-    margin: 20px 0;
-    height: 60vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 13rem 13rem;
     grid-template-areas: 
     "servicioP servicio1"
     "servicioP servicio2";
     gap: 20px;
 }
+.home2 > img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
 .servicioHome1{
-    background-color: #000;
     grid-area: servicioP;
     opacity: 0.8;
     transition: all 2s;
@@ -51,10 +74,10 @@
     }
 }    
 .servicioHome2{
-    background-color: #000;
     grid-area: servicio1;
     opacity: 0.8;
     transition: all 2s;
+    
 
     &:hover{
         transform: scale(1.08);
@@ -62,7 +85,6 @@
     }
 }
 .servicioHome3{
-    background-color: #000;
     grid-area: servicio2;
     opacity: 0.8;
     transition: all 2s;
@@ -81,9 +103,11 @@
     justify-content: space-evenly;
     gap: 1rem;
     align-items: center;
+    margin-bottom: 50px;
 
     p{
         width: 65%;
+        text-align: center;
     }
 }
 .contenedorRowRev{
@@ -93,14 +117,13 @@
     gap: 1rem;
     align-items: center;
 
-    p{
-        width: 65%;
-    }
+            p{
+                width: 65%;
+                text-align: center;
+            }
 }
 .homeProyectosDiv{
-    width: 220px;
-    height: 220px;
-    background-color: #000
+    @include sizes(220px, 220px);
 }
 .home4{
     margin-top: 2rem;
@@ -117,7 +140,7 @@
     }
 }
 .formDiv{
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 .formLabel{
     display: block;
@@ -125,9 +148,9 @@
 input{
     width: 100%;
     height: 2rem;
-    margin-top: 1.3rem;
+    margin-top: 0.2rem;
 }
 textarea{
     width: 100%;
-    margin-top: 1.3rem;
+    margin-top: 0.2rem;
 }
