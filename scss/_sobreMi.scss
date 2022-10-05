@@ -1,10 +1,6 @@
 /* Sobre Mi  */
 .containerMainSobreMi{
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    gap: 4rem;
+    @extend .containerEjemplo;
 }
 .sobreMi{
     background-color: $colorRed;

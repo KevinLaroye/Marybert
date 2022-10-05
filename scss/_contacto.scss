@@ -13,8 +13,7 @@
 }
 .contacto {
     input{
-        width: 50%;
-        height: 35px;
+        @include sizes(50%, 35px);
         margin: 10px 0;
     }
     textarea{

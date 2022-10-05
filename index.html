@@ -3,8 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="¿Entre tantos consultores ninguno te convence? · No vendo humo. Soy consultora. · Es un proceso. No es magia."
+    />
+    <meta
+      name="keywords"
+      content="CONSULTOR, MARKETING, PRODUCTO, CONSULTORA DE MARKETING, ESTRATEGIA DE MARKETING, GESTION DE PROYECTOS, BRANDING, DISEÑO GRAFICO"
+    />
     <link rel="icon" href="./imagenes/favicon.ico" />
-    <title>MaryBert - Portafolio</title>
+    <title>MaryBert - Consultora de Proyectos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -22,10 +36,9 @@
           <div class="container-fluid d-flex">
             <a class="navbar-brand mr-auto p-1" href="index.html">
               <img
+                class="headerImg"
                 src="./imagenes/MARYBERT_logo_2021-24 (1).png"
                 alt="MaryBert"
-                width="35"
-                height="24"
               />
             </a>
             <div>
@@ -73,48 +86,64 @@
 
       <main class="containerMainIndex">
         <section class="home1">
-          <h1>Frase tipo propuesta</h1>
-          <h6>Texto complementario</h6>
+          <h1>¿Entre tantos consultores ninguno te convence?</h1>
+          <h6>Tampoco a mi 😕</h6>
           <div class="homeDiv"></div>
           <p class="pHome">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, cumque
-            tempore porro provident enim debitis nam dignissimos at laboriosam
-            ratione placeat. Dolorum in consequuntur culpa facilis aut sit
-            exercitationem itaque delectus! Dolore quisquam ab quia accusantium
-            tempore asperiores modi blanditiis ipsum similique! Enim quos quod
-            sit repellendus recusandae harum ullam.
+            No vendo humo.<br />
+            Soy consultora.<br />
+            Vendo mi conocimiento y mi experiencia.
+            <br /><br />
+            Te hablo diferente. Como me gusta que me hablen a mí.<br />
+            De cómo no malgastar tu dinero ni tu tiempo con falsas promesas<br />
+            No voy a transformar tu negocio en dos días.
           </p>
         </section>
-        <section>
-          <h6>Frase que te hace llegar a los servicios</h6>
+        <section class="serviciosHome">
+          <h6>Tú necesitas alguien que se encargue de hacerlo.</h6>
           <div class="home2">
-            <div class="servicioHome1"></div>
-            <div class="servicioHome2"></div>
-            <div class="servicioHome3"></div>
+            <img
+              class="servicioHome1"
+              src="./imagenes/Gestion de Proyectos.jpg"
+              alt="Gestion de Proyectos"
+            />
+            <img
+              class="servicioHome2"
+              src="./imagenes/Gestion de Producto.jpg"
+              alt="Gestion de Producto"
+            />
+            <img
+              class="servicioHome3"
+              src="./imagenes/Marketing Digital.jpg"
+              alt="Marketing Digital"
+            />
           </div>
         </section>
         <section class="proyectosSection">
-          <h6>Frase que muestre los proyectos</h6>
+          <h6>Es un proceso. No es magia.</h6>
           <div data-aos="flip-up" class="contenedorRow">
-            <div class="homeProyectosDiv"></div>
+            <img
+              class="homeProyectosDiv"
+              src="./imagenes/logo carmina.svg"
+              alt="Logo Carmina"
+            />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
-              quo? Minus adipisci reprehenderit perspiciatis ab doloribus
-              commodi ipsa optio quasi fugit delectus perferendis facilis, ipsam
-              possimus eius repellendus autem nesciunt aut harum, distinctio
-              officia nemo beatae quam vero ex? Accusamus facilis qui harum
-              assumenda odio quo aliquid. Iure, ad nesciunt!
+              Diseño Web - Carmina<br /><br />
+              Toallas Orgánicas, Pantiprotectores y Copas Menstruales realmente
+              libres de toxinas.
             </p>
           </div>
           <div data-aos="flip-up" class="contenedorRowRev">
-            <div class="homeProyectosDiv"></div>
+            <img
+              class="homeProyectosDiv"
+              src="./imagenes/logo h&h.svg"
+              alt="logo hambre y hormonas"
+            />
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
-              sit tempore quod illum ut unde ullam ratione exercitationem quis
-              quaerat eaque placeat eos perferendis nobis, fugit consectetur.
-              Hic veniam magnam, incidunt saepe at molestias sapiente optio odio
-              iure quo natus mollitia consectetur cum quos. Explicabo a deleniti
-              et deserunt perferendis?
+              Diseño web - Hambre & Hormonas <br /><br />
+              Buscamos enseñarte a conocer cómo funciona tu cuerpo para que
+              puedas tomar las mejores decisiones. Basados en ciencia,
+              resultados y actualidad.
             </p>
           </div>
         </section>
@@ -122,8 +151,9 @@
           <h2>Cuentame de tu Proyecto</h2>
           <div class="home4">
             <h3>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Molestiae, incidunt.
+              ¿Soy la mejor decisión que vas a tomar? <br /><br />
+              Eso ya lo decidirás tú 😉 <br /><br />
+              Por mi parte estoy muy segura de lo que hago
             </h3>
             <form action="">
               <div class="formDiv">
@@ -142,7 +172,7 @@
                 <label class="formLabel" for="proyecto"
                   >Cuentame de tu Proyecto:</label
                 >
-                <textarea name="proyecto" id="" cols="30" rows="10"></textarea>
+                <textarea name="proyecto" id="" cols="30" rows="5"></textarea>
               </div>
               <div class="formDiv">
                 <input type="submit" />
