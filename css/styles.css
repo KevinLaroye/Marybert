@@ -24,6 +24,9 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-nav {
   align-items: flex-end; }
 
+.navbar {
+  z-index: 1; }
+
 /* Footer  */
 .footerImg {
   width: 1.2rem; }
@@ -58,8 +61,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .home2 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 13rem 13rem;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 11rem 11rem;
+  justify-content: center;
   grid-template-areas: "servicioP servicio1" "servicioP servicio2";
   gap: 20px; }
 
@@ -103,8 +107,16 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   margin-bottom: 50px; }
   .contenedorRow p {
-    width: 65%;
+    width: 90%;
     text-align: center; }
+  .contenedorRow .escrito {
+    text-align: start;
+    font-size: 1rem; }
+  .contenedorRow .pExito {
+    text-align: start;
+    margin-bottom: 30px; }
+  .contenedorRow h3 {
+    margin-bottom: 30px; }
 
 .contenedorRowRev {
   display: flex;
@@ -113,8 +125,16 @@ h1, h2, h3, h4, h5, h6 {
   gap: 1rem;
   align-items: center; }
   .contenedorRowRev p {
-    width: 65%;
+    width: 90%;
     text-align: center; }
+  .contenedorRowRev .escrito {
+    text-align: start;
+    font-size: 1rem; }
+  .contenedorRowRev .pExito {
+    text-align: start;
+    margin-bottom: 30px; }
+  .contenedorRowRev h3 {
+    margin-bottom: 30px; }
 
 .homeProyectosDiv {
   width: 220px;
@@ -147,6 +167,9 @@ textarea {
   margin-top: 0.2rem; }
 
 /* Sobre Mi  */
+.containerMainSobreMi {
+  margin: auto 0; }
+
 .sobreMi {
   background-color: #C60E32;
   padding: 20px;
@@ -179,9 +202,22 @@ textarea {
   width: 90%;
   margin: auto auto; }
 
+.contenedorTitulo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.jumbotron-heading {
+  margin-bottom: 2rem; }
+
+.text-muted {
+  font-size: 1rem; }
+
 /* Servicios  */
 .containerMainServicios {
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+  margin: auto 0; }
 
 .contenedorServicios {
   width: 90%;
@@ -197,22 +233,36 @@ textarea {
   margin-top: 50px;
   grid-template-areas: "descripcion imagen" "precio imagen";
   gap: 30px; }
-  .gridServicios p {
+  .gridServicios div {
     grid-area: descripcion; }
   .gridServicios h4 {
     grid-area: precio;
     justify-self: center; }
-  .gridServicios div {
-    grid-area: imagen; }
+  .gridServicios img {
+    grid-area: imagen;
+    align-self: center; }
 
 /* Casos de Exito  */
 .containerMainExito {
-  width: 90%;
   margin-top: 3rem;
   margin-bottom: 3rem; }
 
 #casosDeExito {
   padding: 20px; }
+
+.exitoDiv {
+  width: 80%;
+  margin: auto; }
+  .exitoDiv #cataAriasArte {
+    margin-top: 50px; }
+
+.exitoContainer {
+  align-items: center; }
+  .exitoContainer .card {
+    width: 200px;
+    height: 180px;
+    justify-content: center;
+    margin: auto; }
 
 /* Contacto */
 .containerMainContacto {
@@ -237,6 +287,15 @@ textarea {
 
 /* Media Queries */
 @media screen and (max-width: 480px) {
+  .navbar-nav {
+    align-items: flex-end; }
+  .hamburguesa {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end; }
+  .navbar-toggler {
+    margin: 10px 0; }
   .home2 {
     margin: 40px 0;
     display: flex;

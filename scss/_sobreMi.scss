@@ -1,6 +1,7 @@
 /* Sobre Mi  */
 .containerMainSobreMi{
     @extend .containerEjemplo;
+    margin: auto 0;
 }
 .sobreMi{
     background-color: $colorRed;
@@ -37,5 +38,16 @@
 .contenedorCentral2{
     width: 90%;
     margin: auto auto;
-
+}
+.contenedorTitulo{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.jumbotron-heading{
+    margin-bottom: 2rem;
+}
+.text-muted{
+    font-size: 1rem;
 }

@@ -3,6 +3,7 @@
 .containerMainServicios{
     @extend .containerEjemplo;
     padding-bottom: 2rem;
+    margin: auto 0;
 }
 .contenedorServicios{
     width: 90%;
@@ -21,14 +22,15 @@
     "precio imagen";
     gap: 30px;
 
-    p{
+    div{
         grid-area: descripcion;
     }
     h4{
         grid-area: precio;
         justify-self: center;
     }
-    div{
+    img{
         grid-area: imagen;
+        align-self: center;
     }
 }

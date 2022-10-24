@@ -2,10 +2,28 @@
 
 .containerMainExito{
     @extend .containerEjemplo;
-    width: 90%;
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
 #casosDeExito{
     padding: 20px;
 }
+.exitoDiv{
+    width: 80%;
+    margin: auto;
+
+    #cataAriasArte{
+        margin-top: 50px;
+    }
+}
+.exitoContainer{
+    align-items: center;
+    
+    .card{
+        width: 200px;
+        height: 180px;
+        justify-content: center;
+        margin: auto;
+    }
+}
+

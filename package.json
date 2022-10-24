@@ -1,7 +1,7 @@
 {
   "name": "marybert",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sitio web para mostrar servicios de consultor y captar clientes interesados",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
